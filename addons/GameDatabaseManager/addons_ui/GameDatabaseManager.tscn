@@ -1,0 +1,107 @@
+[gd_scene load_steps=7 format=3 uid="uid://dmwed6a4kpkoa"]
+
+[ext_resource type="Texture2D" uid="uid://ct8re0686bfl0" path="res://addons/GameDatabaseManager/addons_ui/defaultImage.png" id="1_swy80"]
+
+[sub_resource type="Theme" id="Theme_ju6ue"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojqvu"]
+bg_color = Color(0.898039, 0.494118, 0.180392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sxpmx"]
+bg_color = Color(0.898039, 0.494118, 0.180392, 1)
+
+[sub_resource type="Theme" id="Theme_jjpgd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_334o3"]
+bg_color = Color(0.776471, 0.290196, 0.152941, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0862745, 0.0862745, 0.0862745, 0)
+border_blend = true
+corner_detail = 14
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[node name="GameDatabaseManager" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_ju6ue")
+
+[node name="InitialGameDatabaseButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_ojqvu")
+text = "Initial Game Database"
+
+[node name="EditGeneratedDataFileButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_sxpmx")
+text = "Edit Generated Data File"
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="DataContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="DataHeaderLabel" type="Label" parent="ScrollContainer/DataContainer"]
+custom_minimum_size = Vector2(150, 36)
+layout_mode = 2
+size_flags_horizontal = 0
+theme = SubResource("Theme_jjpgd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_334o3")
+text = "Data Type
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/DataContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.5
+alignment = 1
+
+[node name="IconImage" type="Sprite2D" parent="ScrollContainer/DataContainer/VBoxContainer"]
+position = Vector2(64, 65)
+texture = ExtResource("1_swy80")
+
+[node name="IconFilePathLabel" type="Label" parent="ScrollContainer/DataContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "File Path : 
+"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ScrollContainer/DataContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="DataRowContainer" type="VBoxContainer" parent="ScrollContainer/DataContainer/ScrollContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DataTabContainer" type="TabContainer" parent="ScrollContainer/DataContainer"]
+layout_mode = 2
+size_flags_vertical = 3

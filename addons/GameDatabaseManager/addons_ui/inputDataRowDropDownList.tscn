@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b8devar4jt0se"]
+
+[node name="InputSection" type="HBoxContainer"]
+offset_top = 10.0
+offset_right = 252.0
+offset_bottom = 41.0
+size_flags_horizontal = 3
+
+[node name="RowLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.5
+text = "name"
+
+[node name="DropDownInputOptionButton" type="OptionButton" parent="."]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 9.0

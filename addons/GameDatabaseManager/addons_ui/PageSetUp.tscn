@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt2y0573h7xia"]
+
+[sub_resource type="GDScript" id="GDScript_ys6bs"]
+script/source = "extends Control
+
+@onready var header = %Label
+
+# Called when the node enters the scene tree for the first time.
+func _init():
+	print(\"page build from init\")
+
+func _ready():
+	print(\"Page scene script ready!\")
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+func setHeaderLabel(word):
+	header.text = \"page build from init\"
+	pass
+
+func _process(delta):
+	#print(\"page build from init\")
+	pass
+"
+
+[node name="PageSetUp" type="VBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = SubResource("GDScript_ys6bs")
+
+[node name="Frame" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LabelHeader" type="Label" parent="Frame"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Data"
+horizontal_alignment = 1
+
+[node name="SubmitButton" type="Button" parent="Frame"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Create"
