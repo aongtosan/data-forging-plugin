@@ -7,6 +7,8 @@
 
 This plugin is **in early development**. Expect more features and improvements soon.
 
+---
+
 **⚠️ Please read this README before using the plugin.**
 
 ---
