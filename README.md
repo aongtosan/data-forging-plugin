@@ -63,9 +63,9 @@ tab2
 ```json
 {
   "tab1": [
-    "attribute_name/input_type",        // Used to construct form field and class variable
-    "attribute_name/drop_down",
-    "attribute_name/input_rich_text"
+	"attribute_name/input_type",        // Used to construct form field and class variable
+	"attribute_name/drop_down",
+	"attribute_name/input_rich_text"
   ]
 }
 ```
