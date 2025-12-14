@@ -59,7 +59,7 @@
 					"recipes_description",
 					"recipes_type",
 					"recipes_ingidents",
-					"rarity"
+					"recipes_rarity/drop_down/unidentify,common,uncommon,rare,special,epic,legendary,relic,mythical"  ---------> in case of dropdown value script will create enum file by split with delimiter "," comma
 				]
 		|__.value in key *_name should be "name_space" instead of "name space" when generate data
 			ex.
