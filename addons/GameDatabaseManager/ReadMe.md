@@ -75,5 +75,8 @@
 		|__.convention preview data icon from plugin 
 			# For Your Information : This is minor feature it will not impact plugin performance. It is cosmetic featuew or can be use as a guildline for archive and manage item image storage
 			Use Condition (Rule & Conventioning)
-			|__.
+			|__. Create Directory Path for image
+ 				- - - Absolute Path : Drive://project_location/godot_project/assets/resources/images/(tab_name)/display/(data_json.png)
+ 				- --Project Path : res://assets/resources/images/(tab_name)/display/(data_json.png)
+			|__. Image sizing should be 128 * 128 pixel
 				
