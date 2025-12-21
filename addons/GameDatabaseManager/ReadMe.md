@@ -72,4 +72,8 @@
 					"item_rarity" : "uncommon",
 					"price" : "5000"
 				}
+		|__.convention preview data icon from plugin 
+			# For Your Information : This is minor feature it will not impact plugin performance. It is cosmetic featuew or can be use as a guildline for archive and manage item image storage
+			Use Condition (Rule & Conventioning)
+			|__.
 				
